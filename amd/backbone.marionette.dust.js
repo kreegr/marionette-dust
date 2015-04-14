@@ -5,7 +5,7 @@
         dust = require('dust');
     module.exports = factory(backbone, dust);
   } else if (typeof define === 'function' && define.amd) {
-    define(['backbone', 'dust', 'marionette'], factory);
+    define(['backbone', 'dust.core', 'dust-helpers', 'marionette'], factory);
   }
 }(this, function (Backbone, dust) {
 
